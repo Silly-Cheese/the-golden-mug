@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Golden Mug | Staff Information</title>
+
+<style>
+:root{
+  --gold1:#f6e27f;
+  --gold2:#d4af37;
+  --gold3:#b8962e;
+  --white:#ffffff;
+  --dark:#3a2d00;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family:"Segoe UI", system-ui, sans-serif;
+}
+
+body{
+  background:
+    radial-gradient(circle at top, #fff9e6, transparent 60%),
+    linear-gradient(135deg, #fffef8, #f7e7a6, #d9b64a);
+  color:var(--dark);
+  min-height:100vh;
+  overflow-x:hidden;
+}
+
+header{
+  padding:80px 20px 60px;
+  text-align:center;
+  animation:fadeDown 1.2s ease;
+}
+
+header h1{
+  font-size:clamp(2.2rem,5vw,3.6rem);
+  background:linear-gradient(90deg,var(--gold1),var(--gold2),var(--gold1));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  text-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+header p{
+  margin-top:18px;
+  font-size:1.1rem;
+  opacity:.85;
+}
+
+section{
+  max-width:1200px;
+  margin:auto;
+  padding:60px 22px;
+}
+
+.card{
+  background:rgba(255,255,255,.95);
+  border-radius:26px;
+  padding:48px;
+  box-shadow:
+    0 25px 70px rgba(0,0,0,.15),
+    inset 0 0 0 1px rgba(212,175,55,.35);
+  animation:fadeUp 1.2s ease;
+}
+
+.card + .card{
+  margin-top:70px;
+}
+
+.card h2{
+  font-size:clamp(1.8rem,4vw,2.6rem);
+  margin-bottom:26px;
+  background:linear-gradient(90deg,var(--gold2),var(--gold3));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.card p{
+  font-size:1.05rem;
+  line-height:1.9;
+  margin-bottom:28px;
+}
+
+.button-wrap{
+  display:flex;
+  justify-content:flex-start;
+  flex-wrap:wrap;
+  gap:16px;
+}
+
+a.button{
+  text-decoration:none;
+  padding:16px 34px;
+  border-radius:50px;
+  font-weight:700;
+  color:#fff;
+  background:
+    linear-gradient(135deg,var(--gold1),var(--gold2),var(--gold3));
+  box-shadow:
+    0 12px 28px rgba(0,0,0,.25),
+    inset 0 0 0 1px rgba(255,255,255,.35);
+  transition:.35s ease;
+  position:relative;
+  overflow:hidden;
+}
+
+a.button::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,.6),
+    transparent
+  );
+  transform:translateX(-100%);
+  transition:.6s ease;
+}
+
+a.button:hover::after{
+  transform:translateX(100%);
+}
+
+a.button:hover{
+  transform:translateY(-3px) scale(1.03);
+  box-shadow:0 20px 40px rgba(0,0,0,.35);
+}
+
+footer{
+  padding:40px 20px 60px;
+  text-align:center;
+  font-size:.9rem;
+  opacity:.7;
+}
+
+/* Animations */
+@keyframes fadeDown{
+  from{opacity:0; transform:translateY(-40px);}
+  to{opacity:1; transform:translateY(0);}
+}
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(60px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* Mobile polish */
+@media(max-width:700px){
+  .card{
+    padding:34px 26px;
+  }
+  header{
+    padding:60px 18px 40px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>The Golden Mug</h1>
+  <p>Official Staff Information & Oversight Portal</p>
+</header>
+
+<section>
+
+  <div class="card">
+    <h2>Employee Portal</h2>
+    <p>
+      The Golden Mug Employee Portal serves as the centralized operational hub
+      for staff management, internal coordination, and accountability across
+      the organization. Through this portal, authorized personnel can securely
+      access employee profiles, review internal records, manage operational
+      roles, and ensure that professional standards are upheld at every level
+      of the company. All access to the portal is protected through credential-based
+      authentication, with permissions assigned according to role and responsibility.
+      Every interaction within the system is logged, audited, and reviewable,
+      ensuring transparency, traceability, and organizational integrity at all times.
+    </p>
+
+    <div class="button-wrap">
+      <a class="button" href="https://script.google.com/macros/s/AKfycbw0gFMsGkmGkY6a_R2Q46hzVxH__eJsh1PGF6kH6ghw_YHzCJM1-mpGos0c_tf_lRrQ/exec" target="_blank">
+        Enter Employee Portal
+      </a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>RFN Oversight & Customer Portal</h2>
+    <p>
+      RFN is currently overseeing The Golden Mug in full operational capacity,
+      providing corporate governance, compliance enforcement, and system-level
+      oversight to ensure stability, consistency, and long-term growth. This
+      oversight extends to internal systems, staff operations, and customer-facing
+      platforms. In addition to the Employee Portal, RFN maintains a separate
+      Customer Portal designed for limited access by select authorized individuals.
+      This system handles sensitive customer-side operations and is intentionally
+      restricted to preserve security and operational integrity. As with all RFN-managed
+      platforms, every login, action, and modification within the Customer Portal
+      is logged and auditable, allowing full visibility into system activity whenever
+      required.
+    </p>
+
+    <div class="button-wrap">
+      <a class="button" href="https://script.google.com/macros/s/AKfycbzm8hE-CWZbs5xx-E8LEDUuGiqr5l-fEZNytZgzOCaGqnsgyDwU6elkohpDNa4f4A1LkA/exec" target="_blank">
+        Access Customer Portal
+      </a>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  © The Robloxian Franchise Network • Systems monitored, logged, and audited
+</footer>
+
+</body>
+</html>
